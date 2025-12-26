@@ -1,0 +1,29 @@
+# ReaPack
+.reappack_cache/
+*.tmp
+*.bak
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Testing
+/test_output/
+*.test.lua
+
+# Presets (user-generated)
+presets/user_*.lua
+
+# Documentation
+/docs/build/
+
+# Logs
+*.log
