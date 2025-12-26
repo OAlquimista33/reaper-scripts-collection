@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE index SYSTEM "http://www.cockos.com/reapck/index.dtd">
+<index version="1" name="Professional Reaper Scripts Collection">
+  <metadata>
+    <description>Coleção profissional de 50 scripts Lua para produção musical em Reaper - Psytrance, Tech House, Afro House e Minimal Techno</description>
+    <link rel="website">https://github.com/OAlquimista33/reaper-scripts-collection</link>
+    <link rel="screenshot">https://imgur.com/placeholder.jpg</link>
+  </metadata>
+
+  <!-- SEÇÃO 1: UTILITY SCRIPTS (Scripts 1-10) -->
+  <category name="Utility Scripts">
+    <reapack name="01_Master_Limiter_HardClip.lua" type="script" desc="Limiter com hard clip para master - proteção contra picos">
+      <metadata>
+        <description>Limiter profissional com soft/hard clip, release automático e visual feedback em tempo real</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/utility/01_Master_Limiter_HardClip.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="02_Automation_Curve_Creator.lua" type="script" desc="Cria curvas de automação parametrizadas">
+      <metadata>
+        <description>Gera curvas de automação exponenciais, logarítmicas e sinusoidais com amplitude customizável</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/utility/02_Automation_Curve_Creator.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="03_Batch_Rename_Tracks.lua" type="script" desc="Renomeia múltiplas faixas com padrões">
+      <metadata>
+        <description>Renomeação em batch com prefixos, sufixos, contador automático e busca/substituição</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/utility/03_Batch_Rename_Tracks.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="04_Color_Track_Manager.lua" type="script" desc="Gerenciador de cores customizado para tracks">
+      <metadata>
+        <description>Palette de cores profissional, busca por cor, aplicação em batch e presets salvos</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/utility/04_Color_Track_Manager.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="05_Tempo_Sync_Calculator.lua" type="script" desc="Calcula valores sincronizados ao BPM">
+      <metadata>
+        <description>Delay time, LFO rate, sustain time - tudo sincronizado ao tempo com múltiplas unidades</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/utility/05_Tempo_Sync_Calculator.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="06_MIDI_Humanizer.lua" type="script" desc="Humaniza MIDI com variação de timing e velocidade">
+      <metadata>
+        <description>Adiciona groove e imprecisão musical a MIDI com controle granular de timing e velocity</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/utility/06_MIDI_Humanizer.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="07_Waveform_Analyzer.lua" type="script" desc="Analisa características de áudio em tempo real">
+      <metadata>
+        <description>LUFS, pico, RMS, frequência dominante - análise completa com gravação de dados</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/utility/07_Waveform_Analyzer.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="08_Marker_Batch_Manager.lua" type="script" desc="Gerencia múltiplos markers em batch">
+      <metadata>
+        <description>Criar, editar, colorir e deletar markers em massa com busca por padrão</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/utility/08_Marker_Batch_Manager.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="09_FX_Chain_Preset_Manager.lua" type="script" desc="Salva e carrega chains de efeitos">
+      <metadata>
+        <description>Cria presets de chains completas com settings, organization em categorias</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/utility/09_FX_Chain_Preset_Manager.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="10_Selection_Memory_Manager.lua" type="script" desc="Salva e recupera seleções de tracks">
+      <metadata>
+        <description>Múltiplos presets de seleção, toggle entre estados, export/import de layouts</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/utility/10_Selection_Memory_Manager.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+  </category>
+
+  <!-- SEÇÃO 2: AUDIO PROCESSING (Scripts 11-20) -->
+  <category name="Audio Processing">
+    <reapack name="11_Sidechain_Automation_Generator.lua" type="script" desc="Gera automação de sidechain automática">
+      <metadata>
+        <description>Detecta transientes e cria automação de envelope automática para pump/sidechain</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/audio_processing/11_Sidechain_Automation_Generator.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="12_Harmonic_Resonance_Detector.lua" type="script" desc="Detecta frequências ressonantes">
+      <metadata>
+        <description>Identifica picos de ressonância, sugere EQ corrections e exibe mapa visual</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/audio_processing/12_Harmonic_Resonance_Detector.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="13_Dynamic_EQ_Automation.lua" type="script" desc="EQ dinâmico que se adapta ao espectro">
+      <metadata>
+        <description>Automação EQ baseada em análise de FFT em tempo real com múltiplas bandas</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/audio_processing/13_Dynamic_EQ_Automation.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="14_Psychoacoustic_Loudness_Shaper.lua" type="script" desc="Shaper baseado em percepção auditiva">
+      <metadata>
+        <description>Amplifica frequências baseado em curva de Fletcher-Munson para loudness perceptível</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/audio_processing/14_Psychoacoustic_Loudness_Shaper.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="15_Stereo_Width_Controller.lua" type="script" desc="Controla largura estéreo com M/S processing">
+      <metadata>
+        <description>Mid/Side processing com análise de correlação e sugestão de valores ótimos</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/audio_processing/15_Stereo_Width_Controller.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="16_Transient_Shaper_Advanced.lua" type="script" desc="Modelador de transientes multi-band">
+      <metadata>
+        <description>Attack/release por banda de frequência com visual de waveform</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/audio_processing/16_Transient_Shaper_Advanced.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="17_Spectral_Gate_Processor.lua" type="script" desc="Gate baseado em análise espectral">
+      <metadata>
+        <description>Remove frequências específicas com gate adaptativo inteligente</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/audio_processing/17_Spectral_Gate_Processor.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="18_Frequency_Masking_Detector.lua" type="script" desc="Detecta masking entre elementos">
+      <metadata>
+        <description>Identifica conflitos de frequência e sugere EQ para clareza</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/audio_processing/18_Frequency_Masking_Detector.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="19_Phase_Correlation_Analyzer.lua" type="script" desc="Analisa correlação de fase entre tracks">
+      <metadata>
+        <description>Detecta problemas de fase, sugere delays e exibe matriz de correlação</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/audio_processing/19_Phase_Correlation_Analyzer.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="20_Harmonic_Distortion_Designer.lua" type="script" desc="Designer de distorção harmônica controlada">
+      <metadata>
+        <description>Adiciona harmônicos específicos com curva de transferência customizável</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/audio_processing/20_Harmonic_Distortion_Designer.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+  </category>
+
+  <!-- SEÇÃO 3: MIXING & MASTERING (Scripts 21-30) -->
+  <category name="Mixing &amp; Mastering">
+    <reapack name="21_Mix_Reference_Generator.lua" type="script" desc="Gera referências de mix automáticas">
+      <metadata>
+        <description>Filtra, limita e compensa loudness de referências para comparação justa</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/mixing_mastering/21_Mix_Reference_Generator.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="22_Multiband_Compression_Automation.lua" type="script" desc="Compressor multiband com automação">
+      <metadata>
+        <description>4-6 bandas de compressão com automação individual de cada banda</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/mixing_mastering/22_Multiband_Compression_Automation.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="23_Loudness_Metering_Professional.lua" type="script" desc="Medidor de loudness profissional (LUFS/RMS/Peak)">
+      <metadata>
+        <description>Medição em tempo real com histórico, comparação com padrões de streaming</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/mixing_mastering/23_Loudness_Metering_Professional.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="24_Stereo_Imaging_Tool.lua" type="script" desc="Ferramenta avançada de imaging estéreo">
+      <metadata>
+        <description>Correlogram, goniômetro, mid/side balance com análise detalhada</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/mixing_mastering/24_Stereo_Imaging_Tool.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="25_Mastering_Chain_Template.lua" type="script" desc="Chain de mastering profissional em template">
+      <metadata>
+        <description>EQ linear phase, limiter, medidores - tudo pre-configurado otimizado</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/mixing_mastering/25_Mastering_Chain_Template.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="26_Glue_Compressor_Controller.lua" type="script" desc="Compressor de glue com lookahead inteligente">
+      <metadata>
+        <description>Slow-attack compressor com ratio automático e makeup gain adaptativo</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/mixing_mastering/26_Glue_Compressor_Controller.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="27_Tonal_Balance_Generator.lua" type="script" desc="Gerador automático de balanço tonal">
+      <metadata>
+        <description>Analisa tonal balance e gera EQ automática para neutralidade</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/mixing_mastering/27_Tonal_Balance_Generator.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="28_Headroom_Maximizer.lua" type="script" desc="Maximiza headroom mantendo dinâmica">
+      <metadata>
+        <description>Compressão inteligente que preserva transientes enquanto ganha loudness</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/mixing_mastering/28_Headroom_Maximizer.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="29_Mix_Down_Automator.lua" type="script" desc="Automatiza processo de mixdown">
+      <metadata>
+        <description>Renderiza múltiplos formatos (stereo, mono, stems) em uma ação</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/mixing_mastering/29_Mix_Down_Automator.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="30_Loudness_Limiter_Smart.lua" type="script" desc="Limiter inteligente com preservação de dinâmica">
+      <metadata>
+        <description>True-peak limiter com detecção de transiente e release adaptativo</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/mixing_mastering/30_Loudness_Limiter_Smart.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+  </category>
+
+  <!-- SEÇÃO 4: CREATIVE TOOLS (Scripts 31-40) -->
+  <category name="Creative Tools">
+    <reapack name="31_Generative_Arpeggiator.lua" type="script" desc="Arpejador generativo com AI patterns">
+      <metadata>
+        <description>Cria padrões de arpejo procedurais com múltiplas escalas e modos</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/creative/31_Generative_Arpeggiator.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="32_Randomizer_Controlled.lua" type="script" desc="Randomizador de parâmetros com controle">
+      <metadata>
+        <description>Varia parâmetros de FX com constraints e probability distribution</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/creative/32_Randomizer_Controlled.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="33_Polyrhythm_Generator.lua" type="script" desc="Gerador de polirritmo automático">
+      <metadata>
+        <description>Cria layers de ritmos polirítmicos com sincronização ao BPM</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/creative/33_Polyrhythm_Generator.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="34_Granular_Texture_Creator.lua" type="script" desc="Cria texturas granulares procedurais">
+      <metadata>
+        <description>Síntese granular com grão duration, pitch shift e envelope customizável</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/creative/34_Granular_Texture_Creator.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="35_Ambient_Pad_Generator.lua" type="script" desc="Gerador de pads ambiente inteligente">
+      <metadata>
+        <description>Cria pads atmosféricos com reverb, delay e modulation automática</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/creative/35_Ambient_Pad_Generator.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="36_Pitch_Manipulation_Tool.lua" type="script" desc="Manipulação de pitch avançada">
+      <metadata>
+        <description>Pitch shift, harmonizer, formant control com preservação de transientes</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/creative/36_Pitch_Manipulation_Tool.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="37_Reverse_Cymbal_Generator.lua" type="script" desc="Gerador de reverse cymbal/pad reverbs">
+      <metadata>
+        <description>Cria swells reversos e builds automaticamente com envelope customizável</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/creative/37_Reverse_Cymbal_Generator.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="38_Delay_Feedback_Designer.lua" type="script" desc="Designer de delay com feedback criativo">
+      <metadata>
+        <description>Delay com feedback tonality, filter e modulation por repetição</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/creative/38_Delay_Feedback_Designer.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="39_Spectral_Freezer_Tool.lua" type="script" desc="Congela espectro de áudio em tempo real">
+      <metadata>
+        <description>Freeze FFT com pitch detection e time-stretching independente</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/creative/39_Spectral_Freezer_Tool.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="40_Stutter_Effect_Advanced.lua" type="script" desc="Efeito stutter com sync ao BPM">
+      <metadata>
+        <description>Stuttered repeat com pitch modulation e probabilidade de trigger</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/creative/40_Stutter_Effect_Advanced.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+  </category>
+
+  <!-- SEÇÃO 5: ADVANCED & SPECIALIZED (Scripts 41-50) -->
+  <category name="Advanced &amp; Specialized">
+    <reapack name="41_Binaural_Processor_Spatial.lua" type="script" desc="Processador binaural com panning 3D">
+      <metadata>
+        <description>Simulação de posição espacial com HRTF e crossfeed binaural</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/advanced/41_Binaural_Processor_Spatial.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="42_Convolver_Impulse_Manager.lua" type="script" desc="Gerenciador de impulse responses">
+      <metadata>
+        <description>Carrega, processa e organiza múltiplos IRs com crossfade automático</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/advanced/42_Convolver_Impulse_Manager.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="43_Frequency_Correlation_Analyzer.lua" type="script" desc="Analisa correlação entre pistas em frequência">
+      <metadata>
+        <description>Correlação por banda, detecção de masking, sugestão de valores ideais</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/advanced/43_Frequency_Correlation_Analyzer.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="44_Dynamic_Range_Extender.lua" type="script" desc="Expande dynamic range de forma musical">
+      <metadata>
+        <description>Expander com soft-knee e makeup gain automático mantendo fluidez</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/advanced/44_Dynamic_Range_Extender.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="45_ADSR_Envelope_Recorder.lua" type="script" desc="Grava e modela envelopes ADSR">
+      <metadata>
+        <description>Analisa transientes e cria envelopes ADSR automáticamente</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/advanced/45_ADSR_Envelope_Recorder.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="46_Beat_Detection_Analyzer.lua" type="script" desc="Detecta beats e cria markers automáticamente">
+      <metadata>
+        <description>Onset detection com machine learning, cria markers em transientes</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/advanced/46_Beat_Detection_Analyzer.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="47_Tuning_Correction_Automatic.lua" type="script" desc="Corrige afinação automática em tempo real">
+      <metadata>
+        <description>Pitch detection com correção de afinação preservando dinâmica</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/advanced/47_Tuning_Correction_Automatic.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="48_Source_Separation_Assistant.lua" type="script" desc="Assistente de source separation com stems">
+      <metadata>
+        <description>Organiza stems de source separation em tracks com nomes automáticos</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/advanced/48_Source_Separation_Assistant.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="49_Psychoacoustic_Frequency_Mapper.lua" type="script" desc="Mapeia frequências com base em percepção auditiva">
+      <metadata>
+        <description>Curva A-weighting, loudness perception, frequency sensitivity mapping</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/advanced/49_Psychoacoustic_Frequency_Mapper.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+
+    <reapack name="50_Machine_Learning_Gain_Predictor.lua" type="script" desc="Prediz gain ótimo com ML baseado em histórico">
+      <metadata>
+        <description>Aprende com seu histórico de ajustes e sugere valores ótimos automaticamente</description>
+        <version time="2025-12-26T20:30:00Z">1.0</version>
+      </metadata>
+      <source>scripts/advanced/50_Machine_Learning_Gain_Predictor.lua</source>
+      <installed_version time="2025-12-26T20:30:00Z">1.0</installed_version>
+    </reapack>
+  </category>
+
+</index>
